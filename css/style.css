@@ -1,0 +1,133 @@
+html {
+	scroll-behavior: smooth;
+} 
+
+body {
+	margin: 20;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 28px;
+}
+
+form {
+	margin: 20px;
+}
+
+#form1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+}
+
+#form1 input {
+	height: 32px;
+	flex-grow: 1;
+	margin: 20px;
+}
+
+form2 {
+	margin: 0 auto;
+}
+
+
+.input-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.input-container div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input {
+	border-radius: 16px;
+	padding: 8px 12px;
+	font-size: 28px;
+	text-align: center;
+}
+
+label {
+	word-wrap: break-word;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.input-container input{
+	margin: 10px 20px
+}
+
+.input-container input[type="number"]{
+	margin-right: 0;
+}
+
+input[type="submit"]{
+	width: 100%;
+	margin: 60px 0;
+	font-size: 32px;
+	font-weight: 500;
+	border-radius: 24px;
+	background-color: #52c05d;
+	color: whitesmoke;
+	border: 1px solid whitesmoke;
+	transition: 0.2s;
+}
+
+input[type=submit]:hover {
+	background-color: #5cd468;
+}
+
+p {
+	font-size: 28px;
+	font-weight: 500;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	body {
+		font-size: 20px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	#form1{
+		justify-content: center;
+		text-align: center;
+	}
+
+	#form1 label{
+		margin-bottom: 10px;
+	} 
+
+	#form2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input{
+		max-width: 90%;
+		padding: 8px 12px;
+	}
+
+	.input-container div{
+		width: 100%;
+		text-align: center;
+	}
+
+	.input-container input[type="number"]{
+		margin-right:20px
+	}
+
+	input[type="submit"]{
+		margin: 60 auto;
+		align-self: center;
+	}
+}
